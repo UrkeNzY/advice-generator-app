@@ -67,10 +67,31 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 500px) {
-  #advice-card {
-    margin: 0 1.5625rem;
+@media (max-width: 500px) and (min-width: 350px) {
+  body {
+    overflow: hidden;
+    zoom: 0.65;
+    margin: auto auto;
+    padding-top: 175px;
   }
+
+  #divider-pattern {
+    content: url("images/pattern-divider-mobile.svg");
+  }
+}
+
+@media (max-width: 350px) {
+  body {
+    overflow: hidden;
+    zoom: 0.65;
+    margin: auto auto;
+    padding-top: 125px;
+  }
+
+  #advice-card {
+    width: 25rem;
+  }
+
   #divider-pattern {
     content: url("images/pattern-divider-mobile.svg");
   }
